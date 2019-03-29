@@ -18,8 +18,6 @@ namespace TagItAwayLambda
 {
     public class Function
     {
-        const string accesKey = "AKIAQIYEG2QCDUKW7EP5";
-        const string secretKey = "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";
         const string bucketName = "tag-it-away-video-input";
         /// <summary>
         /// A simple function that takes a string and does a ToUpper
@@ -29,7 +27,7 @@ namespace TagItAwayLambda
         /// <returns></returns>
         public async Task<object> FunctionHandler(string fileName, ILambdaContext context)
         {
-            var rekognitionClient = new AmazonRekognitionClient(accesKey, secretKey, Amazon.RegionEndpoint.USEast2);
+            var rekognitionClient = new AmazonRekognitionClient( Amazon.RegionEndpoint.USEast2);
 
 
             return await GetVideoLabelsResult(fileName, rekognitionClient);
@@ -80,7 +78,7 @@ namespace TagItAwayLambda
             };
 
             var startLabelDetectionResult = await rekognitionClient.StartLabelDetectionAsync(startRequest);
-            return startLabelDetectionResult;
+            return startLabelDetectionResult.JobId;
         }
 
 
