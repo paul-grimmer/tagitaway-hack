@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TagItAwayLambda", "TagItAwayLambda\TagItAwayLambda.csproj", "{0EBD5103-6057-42B8-B7EC-2155831FFDA1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TagItAwayGetData", "TagItAwayGetData\TagItAwayGetData.csproj", "{3FCAC158-AA04-4295-9488-DB38E5DA6DAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0EBD5103-6057-42B8-B7EC-2155831FFDA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EBD5103-6057-42B8-B7EC-2155831FFDA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EBD5103-6057-42B8-B7EC-2155831FFDA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FCAC158-AA04-4295-9488-DB38E5DA6DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FCAC158-AA04-4295-9488-DB38E5DA6DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FCAC158-AA04-4295-9488-DB38E5DA6DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FCAC158-AA04-4295-9488-DB38E5DA6DAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
