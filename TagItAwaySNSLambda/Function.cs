@@ -52,18 +52,18 @@ namespace TagItAwaySNSLambda
             tagsTable.PutItemAsync(item);
         }
 
-        private static void RetrieveBook(Table productCatalog)
-        {
-            Console.WriteLine("\n*** Executing RetrieveBook() ***");
-            // Optional configuration.
-            GetItemOperationConfig config = new GetItemOperationConfig
-            {
-                AttributesToGet = new List<string> { "Id", "ISBN", "Title", "Authors", "Price" },
-                ConsistentRead = true
-            };
-            Document document = productCatalog.GetItem(sampleBookId, config);
-            Console.WriteLine("RetrieveBook: Printing book retrieved...");
-            PrintDocument(document);
-        }
+        //private static void RetrieveBook(Table productCatalog)
+        //{
+        //    Console.WriteLine("\n*** Executing RetrieveBook() ***");
+        //    // Optional configuration.
+        //    GetItemOperationConfig config = new GetItemOperationConfig
+        //    {
+        //        AttributesToGet = new List<string> { "Id", "ISBN", "Title", "Authors", "Price" },
+        //        ConsistentRead = true
+        //    };
+        //    Document document = productCatalog.GetItem(sampleBookId, config);
+        //    Console.WriteLine("RetrieveBook: Printing book retrieved...");
+        //    PrintDocument(document);
+        //}
     }
 }
